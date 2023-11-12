@@ -6,7 +6,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 // 논문 Dto
-@Getter @Setter
+@Getter @Setter @AllArgsConstructor
 public class ThesisDto {
 
     private int id; // 논문 id
@@ -15,15 +15,11 @@ public class ThesisDto {
     private String[] author; // 논문 저자
     private String abstr; // 논문 초록
     private String[] contents; // 목차 목록
-    private String textUrl; // 논문 본문 (text.txt)
+    private String text; // 논문 본문
     private Reference[] references; // 참고문헌 목록
+
 }
 
-class Reference {
-
-    private String referenceTitle;
-    private String referenceUrl;
-}
 
 
 //class Content {

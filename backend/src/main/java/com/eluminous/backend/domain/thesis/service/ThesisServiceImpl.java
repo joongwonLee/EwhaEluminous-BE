@@ -3,11 +3,15 @@ package com.eluminous.backend.domain.thesis.service;
 import com.eluminous.backend.domain.thesis.dao.ThesisRepository;
 import com.eluminous.backend.domain.thesis.dao.ThesisRepositoryImpl;
 import com.eluminous.backend.domain.thesis.dto.ThesisDto;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class ThesisServiceImpl implements ThesisService {
 
+    @Autowired
     ThesisRepository thesisRepo = new ThesisRepositoryImpl();
 
     @Override
