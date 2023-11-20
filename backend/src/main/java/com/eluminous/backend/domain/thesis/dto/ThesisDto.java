@@ -8,13 +8,13 @@ import com.fasterxml.jackson.annotation.JsonAutoDetect.Visibility;
         fieldVisibility = JsonAutoDetect.Visibility.ANY
 )
 public class ThesisDto {
-    private int id;
-    private String category;
-    private String title;
-    private String[] author;
-    private String[][] contents;
-    private String[][] text;
-    private String[][] references;
+    public int id;
+    public String category;
+    public String title;
+    public String[] author;
+    public String[][] contents;
+    public String[][] text;
+    public String[][] references;
 
     public ThesisDto(int id, String category, String title, String[] author, String[][] contents, String[][] text, String[][] references) {
         this.id = id;
