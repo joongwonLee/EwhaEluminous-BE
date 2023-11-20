@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @SpringBootApplication
-@CrossOrigin("*")
+@CrossOrigin(origins = { "*" })
 public class BackendApplication {
 
 	public static void main(String[] args) {

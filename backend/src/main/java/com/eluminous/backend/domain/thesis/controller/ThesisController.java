@@ -14,7 +14,7 @@ import java.util.List;
 
 @RestController
 @Slf4j
-@CrossOrigin("*")
+@CrossOrigin(origins = { "*" })
 public class ThesisController {
 
 
